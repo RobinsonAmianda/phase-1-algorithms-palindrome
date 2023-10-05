@@ -1,11 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let final_word = word.split("").reverse().join("")
+  if(final_word === word){
+    return true
+  }else{
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
 */
-
+word = "abba"
+isPalindrome("abba")
+word = "robot"
+isPalindrome("robot")
+word = "ab"
+isPalindrome("ab")
 /*
   Add written explanation of your solution here
 */
